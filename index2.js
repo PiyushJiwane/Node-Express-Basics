@@ -8,7 +8,13 @@ app.get("/",(req,res)=>{
 })
 
 app.get("/api/users",(req,res)=>{
-    res.json(users)
+    // res.json(users)
+    // ------OR--------
+    const newUser=users.map((user)=>{
+        const {id,name,desc}=user
+        return {id,name,desc}
+    })
+    res.json(newUser)
 })
 
 app.listen(3000,()=>{
