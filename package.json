@@ -1,0 +1,23 @@
+{
+  "name": "node-express-basics",
+  "version": "1.0.0",
+  "description": "This folder is a collection of all concpets avaible in node and express js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiyushJiwane/Node-Express-Basics.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs"
+  ],
+  "author": "PiyushJiwane (#jiwanepiyush@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiyushJiwane/Node-Express-Basics/issues"
+  },
+  "homepage": "https://github.com/PiyushJiwane/Node-Express-Basics#readme"
+}
