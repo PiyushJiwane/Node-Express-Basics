@@ -7,18 +7,26 @@ const logger=(req,res,next)=>{
     const url=req.url
     const time=new Date().getFullYear()
     console.log(method,url,time);
-    res.send("Testing")
-    // next()
+    // res.send("Testing")
+    next()
 }
 
-app.use(logger)
+// app.use(logger)
 
-app.get("/",(req,res)=>{
-    // res.send("Home Page")
+// app.get("/",(req,res)=>{
+//     // res.send("Home Page")
+// })
+
+app.get("/",logger,(req,res)=>{
+    res.send("Home Page")
 })
 
-app.get("/about",(req,res)=>{
-    // res.send("About Page")
+// app.get("/about",(req,res)=>{
+//     // res.send("About Page")
+// })
+
+app.get("/about",logger,(req,res)=>{
+    res.send("About Page")
 })
 
 app.listen(3000,()=>{
