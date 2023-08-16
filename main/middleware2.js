@@ -5,7 +5,7 @@ const logger=require("../middleware/logger")
 const app=express()
 
 // This will import middleware function for all other route in middleware.js file
-app.use(logger) // order is important, try to use app.use() before all routers path. 
+app.use("/api",logger) // order is important, try to use app.use() before all routers path. 
 
 app.get("/",(req,res)=>{
     console.log("Home Page");
